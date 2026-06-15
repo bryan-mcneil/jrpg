@@ -1,0 +1,87 @@
+{
+  "id": "quest1",
+  "title": "第一章 — 静かな村 (The Quiet Village)",
+  "nodes": [
+    {
+      "id": "q1-lesson",
+      "type": "lesson",
+      "title": "Words to Remember",
+      "subtitle": "Learn the first words the village needs back.",
+      "x": 0.12,
+      "y": 0.84,
+      "lessonSize": 8,
+      "requires": []
+    },
+    {
+      "id": "q1-intro",
+      "type": "npc",
+      "title": "The Elder's Charge",
+      "subtitle": "The elder sets a brush in your hand.",
+      "x": 0.30,
+      "y": 0.68,
+      "ask": 2,
+      "askMode": "pick",
+      "dialogue": [
+        { "speaker": "村の長老", "jp": "よく来た、若き写し手よ。", "en": "You came at last, young scribe." },
+        { "speaker": "村の長老", "jp": "忘却が、村の言葉を食らっている。看板は白くなり、名は失われた。", "en": "The Forgetting devours our village's words — signs turn blank, names are lost." },
+        { "speaker": "村の長老", "jp": "覚えた漢字は、世界に返る。筆を取り、墨の獣を払え。", "en": "Every kanji you remember returns to the world. Take up your brush and drive off the ink-beasts." }
+      ],
+      "requires": ["q1-lesson"]
+    },
+    {
+      "id": "q1-skirmish",
+      "type": "skirmish",
+      "title": "Ink-Beasts on the Path",
+      "subtitle": "インク小鬼 (木) + インク蝙蝠 (金)",
+      "x": 0.20,
+      "y": 0.50,
+      "formationId": "skirmish",
+      "requires": ["q1-intro"]
+    },
+    {
+      "id": "q1-swarm",
+      "type": "skirmish",
+      "title": "The Swarm in the Reeds",
+      "subtitle": "インクの群れ ×3 — storm clears, blade finishes",
+      "x": 0.42,
+      "y": 0.42,
+      "formationId": "swarm",
+      "requires": ["q1-skirmish"]
+    },
+    {
+      "id": "q1-rest",
+      "type": "npc",
+      "title": "A Word-Spirit's Test",
+      "subtitle": "A freed spirit tests your hand.",
+      "x": 0.60,
+      "y": 0.52,
+      "ask": 2,
+      "askMode": "type",
+      "dialogue": [
+        { "speaker": "言霊", "jp": "よく戦った。だが、書けるか。", "en": "Well fought. But can you write?" },
+        { "speaker": "言霊", "jp": "漢字の読みを、記してみせよ。", "en": "Set down the reading of the kanji, and show me." }
+      ],
+      "requires": ["q1-swarm"]
+    },
+    {
+      "id": "q1-miniboss",
+      "type": "boss",
+      "title": "Warden of the Burnt Shrine",
+      "subtitle": "忘火の番人 (火) — forces typed readings",
+      "x": 0.72,
+      "y": 0.32,
+      "formationId": "miniboss",
+      "requires": ["q1-rest"]
+    },
+    {
+      "id": "q1-boss",
+      "type": "boss",
+      "title": "The Water-Spirit of Forgetting",
+      "subtitle": "忘水の精 (水) — DEFEND when it charges 大水流",
+      "x": 0.87,
+      "y": 0.16,
+      "formationId": "boss",
+      "requires": ["q1-miniboss"]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "_comment": "Hand-curated element/modifier tags that beat the component rules in tool/import.dart. Elements: fire water wood earth metal light dark. Modifiers: storm blade ward amp orb mend boon.",
+
+  "火": "fire",
+  "水": "water",
+  "木": "wood",
+  "土": "earth",
+  "金": "metal",
+
+  "光": "light",
+  "明": "light",
+  "星": "light",
+  "白": "light",
+  "闇": "dark",
+  "夜": "dark",
+  "黒": "dark",
+  "影": "dark",
+
+  "嵐": "storm",
+  "雨": "storm",
+  "風": "storm",
+  "電": "storm",
+  "雷": "storm",
+
+  "剣": "blade",
+  "刀": "blade",
+  "刃": "blade",
+  "矢": "blade",
+  "弓": "blade",
+  "切": "blade",
+
+  "盾": "ward",
+  "守": "ward",
+  "壁": "ward",
+  "安": "ward",
+
+  "大": "amp",
+  "巨": "amp",
+
+  "力": "boon",
+  "強": "boon",
+  "上": "boon",
+  "増": "boon",
+  "勇": "boon",
+
+  "珠": "orb",
+  "玉": "orb",
+  "球": "orb",
+
+  "癒": "mend",
+  "治": "mend",
+  "薬": "mend",
+  "医": "mend",
+  "休": "mend"
+}
